@@ -10,5 +10,5 @@
 2. paste https://reacthq.herokuapp.com/api/v1/user/register in the 'Enter URL menu' and set the method to **POST**
 3. Nodemailer and mailtrap was used to handle the mailing.
 
-###Email response in mailtrap
+ **Email response in mailtrap**
 ![Screenshot 2022-05-23 141658](https://user-images.githubusercontent.com/81367700/169828526-2a0d37bc-6e20-48c8-abbd-5c5ebf704616.png)
