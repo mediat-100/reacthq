@@ -6,13 +6,17 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 exports.register = catchAsync(async (req, res, next) => {
-  // const validateUser = await checkBankDetails(req.body.accountNumber);
-  // if (!validateUser) {
-  //   return res.status(400).json({
-  //     status: 'failed',
-  //     msg: 'Invalid account number'
-  //   })
-  // }
+  
+  /* To validate user
+  const validateUser = await checkBankDetails(req.body.accountNumber, req.body.bankCode);
+  if (!validateUser) {
+    return res.status(400).json({
+      status: 'failed',
+      msg: 'Invalid account number'
+    })
+  }
+  */
+
   //check if user already exist
   const existingUser = await User.findOne({ email: req.body.email });
   if (existingUser) {
