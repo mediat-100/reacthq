@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000;
 
 const server = http.createServer(app);
 
+console.log(process.env.DB);
 mongoose
   .connect(process.env.DB, {
     useUnifiedTopology: true,
